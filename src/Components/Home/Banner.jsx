@@ -13,7 +13,7 @@ const handleDownload = () => {
 
 const Banner = () => {
     return (
-        <div data-aos="fade-down" data-aos-delay="500" className="lg:h-[550px] mt-5 p-6 pt-[120px] hover:shadow-2xl rounded-xl bg-gray-100">
+        <div data-aos="fade-down" data-aos-delay="500" className="lg:h-[550px]   p-6 pt-[120px] hover:shadow-2xl rounded-xl ">
             <section className="relative flex flex-col-reverse lg:flex gap-7 lg:flex-row-reverse justify-between items-center bg-cover bg-center bg-no-repeat">
                 <div>
                     <div>
@@ -41,7 +41,7 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
-                <img className="size-[350px] rounded-2xl opacity-90" src="https://i.ibb.co/tx46hq6/Whats-App-Image-2024-05-02-at-16-04-23-134d2b24-fotor-bg-remover-20240630203722.png" alt="Mary Hardy" />
+                <img className="size-[350px] rounded-2xl opacity-95" src="https://i.ibb.co/tx46hq6/Whats-App-Image-2024-05-02-at-16-04-23-134d2b24-fotor-bg-remover-20240630203722.png" alt="Mary Hardy" />
             </section>
         </div>
     );

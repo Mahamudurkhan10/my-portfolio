@@ -9,7 +9,7 @@ import Skills from "./Skills";
 
 const Home = () => {
      return (
-          <div>
+          <div className="">
                <Banner></Banner>
                <Skills></Skills>
                <Site></Site>
