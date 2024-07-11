@@ -1,22 +1,53 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+import { Typewriter } from 'react-simple-typewriter';
 AOS.init()
 const AboutMe = () => {
      return (
           <div className="lg:pt-[100px] pt-[140px] p-3">
-               <div   data-aos="zoom-in-up"
+               <div data-aos="zoom-in-up"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000" className="w-1/2 mx-auto">
                     <img src="https://i.ibb.co/tx46hq6/Whats-App-Image-2024-05-02-at-16-04-23-134d2b24-fotor-bg-remover-20240630203722.png" className="lg:size-[500px] rounded-full" alt="" />
                </div>
-               <h1 className="text-4xl font-bold"> Hello, I am
+               <h1 className="text-4xl font-bold">
+                    <Typewriter
+                         words={['Hello, I am']}
 
+                         cursor
+                         cursorStyle='..'
+                         typeSpeed={90}
+                         deleteSpeed={70}
+                         delaySpeed={5000}
+                    />
                </h1>
-               <h1 className="text-4xl font-bold text-yellow-900">  Mahamudur <span className="text-4xl font-bold text-blue-700">Khan</span> </h1>
-               <p className="text-xl font-semibold ">  I am a student of CSE Diploma At Tangail Polytechnic Institute. I love to codding . So thats why I learned Web Development. </p>
-               <p className="text-lg font-normal "> <span className="text-xl text-blue-600">Now</span> I am a passionate Junior Web Developer eager to contribute to cutting-edge web projects. Proficient in front-end development using HTML, CSS, JavaScript, and React, with a solid understanding of back-end technologies like Node.js and Express.</p>
+               <h1 className="text-4xl font-bold text-yellow-900">
+                    <Typewriter
+                         words={['Mahamudur']}
+                         loop={false}
+                         cursor
+                         cursorStyle=''
+                         typeSpeed={90}
+                         deleteSpeed={70}
+                         delaySpeed={5000}
+                    />
+                    <span className="text-4xl ml-4 font-bold text-blue-700">
+                         <Typewriter
+                              words={['Khan']}
+                              loop={false}
+                              cursor
+                              cursorStyle='..'
+                              typeSpeed={90}
+                              deleteSpeed={70}
+                              delaySpeed={5000}
+                         />
 
-               <div   data-aos="zoom-in-down"
+                    </span> </h1>
+               <p className="text-xl font-semibold mt-3">  I am a student of CSE Diploma At Tangail Polytechnic Institute. I love to codding . So thats why I learned Web Development. </p>
+               <p className="text-lg font-normal "> <span className="text-xl ">Now</span> I am a passionate Junior Web Developer eager to contribute to cutting-edge web projects. Proficient in front-end development using HTML, CSS, JavaScript, and React, with a solid understanding of back-end technologies like Node.js and Express.</p>
+
+               <div data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
                     <h1 className="text-2xl mt-4 font-bold flex lg:flex-row flex-col items-center gap-5"> My Skills :    <div className="flex gap-3 mt-3">
@@ -29,7 +60,7 @@ const AboutMe = () => {
                          <img align="left" alt="MongoDB" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="padding-right:10px;" />
                          <img align="left" alt="Git" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="padding-right:10px;" />
 
-                         <img  align="left" alt="GitHub" width="26px" src="https://user-images.githubusercontent.com/3369400/139448065-39a229ba-4b06-434b-bc67-616e2ed80c8f.png" className="padding-right:10px; bg-slate-50 rounded-2xl" />
+                         <img align="left" alt="GitHub" width="26px" src="https://user-images.githubusercontent.com/3369400/139448065-39a229ba-4b06-434b-bc67-616e2ed80c8f.png" className="padding-right:10px; bg-slate-50 rounded-2xl" />
 
                     </div> </h1>
 

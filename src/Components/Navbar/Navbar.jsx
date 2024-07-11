@@ -24,8 +24,6 @@ const Navbar = () => {
           <NavLink className={({ isActive }) => isActive ? 'font-bold text-info' : 'font-semibold '} to={'/aboutMe'}> <li><a> About Me</a></li></NavLink>
           <NavLink className={({ isActive }) => isActive ? 'font-bold text-info' : 'font-semibold '} to={'/contactMe'}> <li><a> Contact Me </a></li></NavLink>
 
-
-
      </div>
      return (
           <div className="">
