@@ -44,7 +44,7 @@ const Banner = () => {
                             Hello! 
                             <Typewriter
                                 words={[" I'm Mahamudur Khan, a passionate Junior Web Developer eager to contribute to cutting-edge web projects. Proficient in front-end development using HTML, CSS, JavaScript, and React, with a solid understanding of back-end technologies like Node.js and Express."]}
-                                loop={false}
+                                
                                 cursor
                                 cursorStyle='..'
                                 typeSpeed={90}
