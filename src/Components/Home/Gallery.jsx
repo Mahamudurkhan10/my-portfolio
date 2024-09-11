@@ -15,8 +15,10 @@ import { Pagination } from 'swiper/modules';
 const Gallery = () => {
      return (
           <div className=' mb-9'>
-               <h1 className='text-4xl font-bold text-center m-6'> My WebSites Gallery </h1>
-               <p className='w-2/3 text-center font-semibold mb-5 mx-auto'>Welcome to our amazing website preview! Dive into a vibrant world where creativity meets functionality. Experience seamless navigation, stunning visuals, and cutting-edge features designed to captivate and engage. </p>
+               <div className=' text-center'>
+               <h1 className='text-4xl font-bold text-center m-6 btn rounded-full text-blue-700 animate-pulse hover:text-white hover:bg-blue-600 hover:animate-none'> My WebSites Gallery </h1>
+               </div>
+               <p className='w-2/3 text-center font-semibold mb-5 mx-auto text-gray-300'>Welcome to our amazing website preview! Dive into a vibrant world where creativity meets functionality. Experience seamless navigation, stunning visuals, and cutting-edge features designed to captivate and engage. </p>
 
                <div>
                     <Swiper

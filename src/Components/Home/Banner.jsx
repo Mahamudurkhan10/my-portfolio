@@ -15,11 +15,11 @@ const handleDownload = () => {
 
 const Banner = () => {
     return (
-        <div data-aos="fade-down" data-aos-delay="500" className="lg:h-[550px] p-6 pt-[120px] hover:shadow-2xl rounded-xl">
+        <div  className="lg:h-[550px] p-6 pt-[120px] border-2 border-[#292929] rounded-xl">
             <section className="relative flex flex-col-reverse lg:flex gap-7 lg:flex-row-reverse justify-around items-center bg-cover bg-center bg-no-repeat">
                 <div className="max-w-[600px]">
                     <div>
-                        <h3 className="text-5xl font-bold text-blue-900 mb-7">
+                        <h3 className="text-5xl font-bold text-blue-400 mb-7">
                         <Typewriter
                                 words={['Hello , I am']}
                                 
@@ -29,7 +29,7 @@ const Banner = () => {
                              
                             />
                         </h3>
-                        <h1 className="banner-title text-6xl mb-6 font-bold text-orange-900">
+                        <h1 className="banner-title text-6xl mb-6 font-bold text-orange-800">
                             <Typewriter
                                 words={['Mahamudur Khan']}
                                 
@@ -40,7 +40,7 @@ const Banner = () => {
                                 delaySpeed={8000}
                             />
                         </h1>
-                        <p className="mt-4 text-lg font-medium ">
+                        <p className="mt-4 text-lg font-medium text-white">
                             Hello! 
                             <Typewriter
                                 words={[" I'm Mahamudur Khan, a passionate Junior Web Developer eager to contribute to cutting-edge web projects. Proficient in front-end development using HTML, CSS, JavaScript, and React, with a solid understanding of back-end technologies like Node.js and Express."]}
@@ -55,9 +55,9 @@ const Banner = () => {
                         <div className="mt-8 flex flex-wrap gap-4 text-center">
                             <button
                                 onClick={handleDownload}
-                                className="block w-full rounded bg-blue-700 px-6 py-3 text-sm font-medium text-white shadow hover:bg-blue-900 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                                className="block w-full rounded animate-bounce hover:animate-none bg-blue-700 px-6 py-3 text-sm font-medium text-white shadow hover:bg-blue-900 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
                             >
-                                Download CV
+                                Download resume
                             </button>
                             <a
                                 href="/aboutMe"
@@ -68,7 +68,7 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
-                <img className="max-w-[350px] rounded-2xl opacity-95" src="https://i.ibb.co/tx46hq6/Whats-App-Image-2024-05-02-at-16-04-23-134d2b24-fotor-bg-remover-20240630203722.png" alt="Mary Hardy" />
+                <img className="max-w-[350px] rounded-2xl opacity-95 animate-pulse" src="https://i.ibb.co/tx46hq6/Whats-App-Image-2024-05-02-at-16-04-23-134d2b24-fotor-bg-remover-20240630203722.png" alt="Mary Hardy" />
             </section>
         </div>
     );

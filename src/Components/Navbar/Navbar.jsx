@@ -1,33 +1,23 @@
-import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useCallback, useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
-     const [theme, setTheme] = useState('light')
-     useEffect(() => {
-          localStorage.setItem('theme', theme)
-          const localTheme = localStorage.getItem('theme')
-          document.querySelector('html').setAttribute('data-theme', localTheme)
-     }, [theme])
-
-
-     const handleToggle = (e) => {
-          if (e.target.checked) {
-               setTheme('dark')
+     const scrollToSection = useCallback((id) => {
+          const section = document.getElementById(id);
+          if (section) {
+               section.scrollIntoView({ behavior: 'smooth' });
           }
-          else {
-               setTheme('light')
-          }
-     }
-     const NavItems = <div className="text-xl lg:flex">
-          <NavLink className={({ isActive }) => isActive ? 'font-bold text-info' : 'font-semibold '} to={'/'}> <li><a> Home</a></li></NavLink>
-          <NavLink className={({ isActive }) => isActive ? 'font-bold text-info' : 'font-semibold '} to={'/aboutMe'}> <li><a> About Me</a></li></NavLink>
-          <NavLink className={({ isActive }) => isActive ? 'font-bold text-info' : 'font-semibold '} to={'/contactMe'}> <li><a> Contact Me </a></li></NavLink>
+     }, []);
 
+     const NavItems = <div className="text-xl lg:flex text-white gap-4">
+          <Link className="hover:text-blue-600" to={'/'}><li> Home </li></Link>
+          <Link className="hover:text-blue-700" onClick={() => scrollToSection('about')} ><li> About Me </li></Link>
+          <Link className="hover:text-blue-600 " to={'/contactMe'}><li> Contact Me </li></Link>
      </div>
      return (
           <div className="">
-               <div className="navbar fixed z-10  max-w-screen-xl  opacity-94 bg-base-100">
+               <div className="navbar fixed z-10  max-w-screen-xl  opacity-94 bg-[#191919] ">
                     <div className="navbar-start ">
                          <div className="dropdown">
                               <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -51,7 +41,7 @@ const Navbar = () => {
                               </ul>
                          </div>
 
-                         <button className="text-xl flex lg:flex-row gap-3 flex-col items-center"> <a href="https://i.ibb.co/tx46hq6/Whats-App-Image-2024-05-02-at-16-04-23-134d2b24-fotor-bg-remover-20240630203722.png"><img className="rounded-full h-12 " src="https://i.ibb.co/tx46hq6/Whats-App-Image-2024-05-02-at-16-04-23-134d2b24-fotor-bg-remover-20240630203722.png" alt="" /></a> <NavLink to={'/'} className={'text-xl font-bold text-yellow-800'}> <span className="text-xl font-bold text-blue-800">Mahamudur</span> Khan</NavLink>   </button>
+                         <button className="text-2xl text-white font-semibold "> <span className="text-info">Mahamudur</span> Khan   </button>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                          <ul className="menu menu-horizontal px-1">
@@ -59,8 +49,8 @@ const Navbar = () => {
                          </ul>
                     </div>
                     <div className="lg:navbar-end ml-7 space-x-2 lg:ml-0 ">
-                         <input onChange={handleToggle} type="checkbox" className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" />
-                         <NavLink to={'/contactMe'}>  <a className="btn btn-info btn-outline"> Hire Me </a></NavLink>
+
+                         <NavLink to={'/contactMe'}>  <a className="btn btn-info btn-outline animate-pulse"> Hire Me </a></NavLink>
                     </div>
                </div>
           </div>

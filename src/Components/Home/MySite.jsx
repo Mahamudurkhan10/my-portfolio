@@ -9,10 +9,12 @@ const MySite = () => {
      return (
           <div className="mt-6">
                <section>
-                    <h1 className="uppercase font-bold text-4xl  text-center"> Here is my Created WebSites
+                    <div className="text-center ">
+                    <h1 className="uppercase font-bold text-4xl  text-center text-blue-800 animate-pulse hover:bg-blue-700 hover:text-white btn rounded-full"> My Project 
                     </h1>
+                    </div>
 
-                    <p className=" w-2/3 text-sm font-semibold mt-2 text-center mx-auto">Welcome to my portfolio, where creativity meets functionality. Explore my projects, skills, and experiences in web development and design. Each project reflects my dedication to excellence and innovation. Discover how my expertise can bring your digital vision to life.</p>
+                    <p className=" w-2/3 text-[16px] font-semibold mt-2 text-center text-gray-300 py-3 mx-auto">Welcome to my portfolio, where creativity meets functionality. Explore my projects, skills, and experiences in web development and design. Each project reflects my dedication to excellence and innovation. Discover how my expertise can bring your digital vision to life.</p>
 
                </section>
                <section  className="grid gap-5  lg:grid-cols-2 grid-cols-1">
