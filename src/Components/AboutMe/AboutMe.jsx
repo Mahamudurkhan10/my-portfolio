@@ -1,7 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
-
+import { Typewriter } from 'react-simple-typewriter';
 
 AOS.init()
 const AboutMe = () => {
@@ -13,9 +13,16 @@ const AboutMe = () => {
                <div>
                     <h1  className='text-2xl text-indigo-500 font-semibold'> Curious about me? Here you have it: </h1>
                     <h1 className=' py-2 text-xl font-normal'>
-                         I’m Mahamudur Khan, a passionate and driven Computer Science and Engineering (CSE) student at TPI. I have a strong interest in web development, specializing in Frontend Development with expertise in HTML, CSS, JavaScript, React.js, and Next.js. Alongside my frontend skills, I also have experience in backend technologies like Node.js, Express.js, and MongoDB, allowing me to develop full-stack applications.
-
-                         My hobbies include exploring new web technologies, learning about modern web frameworks, and solving complex problems through code. In my free time, I enjoy working on personal projects, refining my skills, and staying up-to-date with the latest trends in UI/UX design and web development. </h1>
+                    <Typewriter
+                                words={["I’m Mahamudur Khan, a passionate and driven Computer Science and Engineering (CSE) student at TPI. I have a strong interest in web development, specializing in Frontend Development with expertise in HTML, CSS, JavaScript, React.js, and Next.js. Alongside my frontend skills, I also have experience in backend technologies like Node.js, Express.js, and MongoDB, allowing me to develop full-stack applications. My hobbies include exploring new web technologies, learning about modern web frameworks, and solving complex problems through code. In my free time, I enjoy working on personal projects, refining my skills, and staying up-to-date with the latest trends in UI/UX design and web development"]}
+                                
+                                cursor
+                                cursorStyle='..'
+                                typeSpeed={30}
+                             
+                                delaySpeed={8000}
+                            />
+                         </h1>
                </div>
                <div>
                     <h1 className='text-2xl font-semibold text-blue-700'> Education  </h1>

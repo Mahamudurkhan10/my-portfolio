@@ -11,7 +11,7 @@ import Skills from "./Skills";
 
 const Home = () => {
      return (
-          <div className="">
+          <div id="home" className="">
                <Banner></Banner>
                <Skills></Skills>
                 <AboutMe ></AboutMe>

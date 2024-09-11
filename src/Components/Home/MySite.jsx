@@ -10,7 +10,7 @@ const MySite = () => {
           <div className="mt-6">
                <section>
                     <div className="text-center ">
-                    <h1 className="uppercase font-bold text-4xl  text-center text-blue-800 animate-pulse hover:bg-blue-700 hover:text-white btn rounded-full"> My Project 
+                    <h1 className="uppercase font-bold text-2xl lg:text-4xl  text-center text-blue-800 animate-pulse hover:bg-blue-700 hover:text-white btn rounded-full"> My Project 
                     </h1>
                     </div>
 

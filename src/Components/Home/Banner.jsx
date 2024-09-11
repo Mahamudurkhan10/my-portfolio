@@ -68,7 +68,7 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
-                <img className="max-w-[350px] rounded-2xl opacity-95 animate-pulse" src="https://i.ibb.co/tx46hq6/Whats-App-Image-2024-05-02-at-16-04-23-134d2b24-fotor-bg-remover-20240630203722.png" alt="Mary Hardy" />
+                <img className="max-w-[350px] rounded-2xl opacity-95 animate-pulse shadow-lg  transition-all duration-100 hover:scale-110" src="https://i.ibb.co/tx46hq6/Whats-App-Image-2024-05-02-at-16-04-23-134d2b24-fotor-bg-remover-20240630203722.png" alt="Mary Hardy" />
             </section>
         </div>
     );

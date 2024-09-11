@@ -9,7 +9,7 @@ const Responsive = () => {
      return (
           <div>
                <div className="text-center">
-               <h1 className="text-4xl font-bold btn animate-pulse hover:text-white hover:animate-none  rounded-full bg-gray-400 text-blue-900 text-center mt-9"> Full Responsive Design </h1>
+               <h1 className="lg:text-4xl text-2xl font-bold btn animate-pulse hover:text-white hover:animate-none  rounded-full bg-gray-400 text-blue-900 text-center mt-9"> Full Responsive Design </h1>
                </div>
                
                  <section className="grid lg:grid-cols-4 grid-cols-2 text-white opacity-70 mt-9 p-3 gap-[30px] lg:ml-[100px]">
