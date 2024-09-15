@@ -7,11 +7,11 @@ import { Typewriter } from 'react-simple-typewriter';
 
 AOS.init();
 
-const handleDownload = () => {
-    const fileUrl = 'https://i.ibb.co/H4sC0mD/Screenshot-20.png';
-    const fileName = 'CV.png';
-    saveAs(fileUrl, fileName);
-};
+// const handleDownload = () => {
+//     const fileUrl = 'https://i.ibb.co/H4sC0mD/Screenshot-20.png';
+//     const fileName = 'CV.png';
+//     saveAs(fileUrl, fileName);
+// };
 
 const Banner = () => {
     return (
@@ -54,7 +54,7 @@ const Banner = () => {
                         </p>
                         <div className="mt-8 flex flex-wrap gap-4 text-center">
                             <button
-                                onClick={handleDownload}
+                                // onClick={handleDownload}
                                 className="block w-full rounded animate-bounce hover:animate-none bg-blue-700 px-6 py-3 text-sm font-medium text-white shadow hover:bg-blue-900 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
                             >
                                 Download resume
